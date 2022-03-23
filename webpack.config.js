@@ -22,11 +22,12 @@ module.exports = {
         ]
     },
     resolve: {
-        extensions: ['.ts', '.js', '.scss', 'png']
+        extensions: ['.ts', '.js', '.scss', '.png', '.ico', '.jpg']
     },
     plugins: [
         new HtmlWebpackPlugin({
-            template: resolve(__dirname, 'src', 'index.html')
+            template: resolve(__dirname, 'index.html'),
+            favicon: resolve(__dirname, 'assets', 'favicon.ico')
         }),
         new CleanWebpackPlugin()
     ]
