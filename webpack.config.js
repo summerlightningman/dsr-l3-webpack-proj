@@ -18,11 +18,19 @@ module.exports = {
                 test: /\.ts$/,
                 exclude: /node_modules/,
                 use: 'ts-loader'
+            },
+            {
+                test: /\.scss$/,
+                use: [
+                    'style-loader',
+                    'css-loader',
+                    'sass-loader'
+                ]
             }
         ]
     },
     resolve: {
-        extensions: ['.ts', '.js', '.scss', '.png', '.ico', '.jpg']
+        extensions: ['.ts', '.js', '.scss', '.png', '.ico', '.jpg', '.json']
     },
     plugins: [
         new HtmlWebpackPlugin({

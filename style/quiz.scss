@@ -1,0 +1,21 @@
+.quiz {
+  width: 70vw;
+  height: 600px;
+  background: #F7CAC9;
+  border-radius: 20px;
+  padding: 10px 20px;
+
+  &__content {
+    background: white;
+    border-radius: 20px;
+    height: 85%;
+  }
+
+  &__title {
+    color: white;
+  }
+
+  &__question {
+    color: black;
+  }
+}

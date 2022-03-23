@@ -1,0 +1,14 @@
+@import './winx-style-text';
+@import './global';
+@import './quiz.scss';
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #C3447A;
+}
+
+
