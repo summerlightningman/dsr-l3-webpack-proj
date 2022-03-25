@@ -1,8 +1,29 @@
 .answer-list {
+  padding: 0 30px;
 
   &__item {
-    border-radius: 10px;
+    list-style-type: none;
+    border-radius: 15px;
     box-shadow: -4px 4px black;
-    background: tomato;
+    background: #f7cac9;
+    padding: 10px 0 10px 20px;
+    font-size: 24px;
+    color: #c3447a;
+    text-align: start;
+    cursor: pointer;
+
+    &:hover {
+      box-shadow: -5px 7px black;
+      transform: translate(1px, -3px);
+    }
+
+    &:active {
+      box-shadow: none;
+      transform: translate(-4px, 4px);
+    }
+  }
+
+  &__item + &__item {
+    margin-top: 10px;
   }
 }
