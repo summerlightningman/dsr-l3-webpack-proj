@@ -1,7 +1,7 @@
 import {Question, QuestionList} from "./types/question";
 
 import questions from '../data/questions.json';
-import {setAnswerList, setQuestionText} from "./node-functions";
+import {setAnswerList, setQuestionText} from "./helpers/node-functions";
 
 import '../style/index.scss';
 

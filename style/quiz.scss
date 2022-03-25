@@ -1,7 +1,9 @@
+@import './constants';
+
 .quiz {
   width: 70vw;
   height: 600px;
-  background: #F7CAC9;
+  background: $lightpink;
   border-radius: 20px;
   padding: 10px 20px;
 
@@ -12,7 +14,7 @@
   }
 
   &__title {
-    color: white;
+    color: $darkpink;
   }
 
   &__question {

@@ -1,3 +1,4 @@
+@import './constants';
 @import './winx-style-text';
 @import './global';
 @import './quiz.scss';
@@ -9,7 +10,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background: #C3447A;
+  background: $darkpink;
 }
 
 

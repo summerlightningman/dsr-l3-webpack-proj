@@ -1,3 +1,5 @@
+@import './constants';
+
 .answer-list {
   padding: 0 30px;
 
@@ -5,10 +7,10 @@
     list-style-type: none;
     border-radius: 15px;
     box-shadow: -4px 4px black;
-    background: #f7cac9;
+    background: $lightpink;
     padding: 10px 0 10px 20px;
     font-size: 24px;
-    color: #c3447a;
+    color: $darkpink;
     text-align: start;
     cursor: pointer;
 
