@@ -1,13 +1,21 @@
-import {Question} from "./types/question";
+import {Question, QuestionList} from "./types/question";
 
 import questions from '../data/questions.json';
-
-import '../style/index.scss';
 import {setAnswerList, setQuestionText} from "./node-functions";
 
-let currQuestionIdx = 0;
-const currQuestion: Question = questions[currQuestionIdx];
-const answerTextList = currQuestion.answerList.map(_ => _.text)
+import '../style/index.scss';
 
-setQuestionText(currQuestion.title);
-setAnswerList(answerTextList);
+
+const start = (questionList: QuestionList) => {
+    const update = (currStep: number = 0) => {
+        const currQuestion: Question = questionList[currStep];
+        const answerTextList = currQuestion.answerList.map(_ => _.text);
+        const onAnswerClick = () => update(currStep + 1);
+        setQuestionText(currQuestion.title);
+        setAnswerList(answerTextList, onAnswerClick);
+    }
+
+    return update()
+};
+
+start(questions);
