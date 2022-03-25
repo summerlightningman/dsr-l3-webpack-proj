@@ -7,3 +7,5 @@ export interface Question {
     title: QuestionTitle,
     answerList: AnswerList
 }
+
+export type QuestionList = Question[];
