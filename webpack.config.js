@@ -6,7 +6,9 @@ module.exports = {
     entry: resolve(__dirname, 'src', 'index.ts'),
     output: {
         filename: "[contenthash].bundle.js",
-        path: resolve(__dirname, 'dist')
+        path: resolve(__dirname, 'dist'),
+        clean: true,
+        assetModuleFilename: 'src/assets/img/[name].[ext]'
     },
     mode: 'production',
     devServer: {
@@ -14,6 +16,10 @@ module.exports = {
     },
     module: {
         rules: [
+            {
+                test: /\.(jpg|jpeg|png)$/i,
+                type: 'asset/resource'
+            },
             {
                 test: /\.ts$/,
                 exclude: /node_modules/,
