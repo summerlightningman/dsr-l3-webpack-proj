@@ -17,7 +17,12 @@ module.exports = {
             {
                 test: /\.ts$/,
                 exclude: /node_modules/,
-                use: 'ts-loader'
+                use: ['ts-loader']
+            },
+            {
+                test: /\.ts$/,
+                enforce: 'pre',
+                use: ['source-map-loader']
             },
             {
                 test: /\.scss$/,
