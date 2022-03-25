@@ -1,6 +1,6 @@
 import {Description, Result, ResultID} from "../types/result";
 import {setQuestionText} from "./node-functions";
-import getResultById from "./get-result";
+import getResultById from "./get-result-by-id";
 import {fairyImgs} from "../constants";
 
 const getFairyImg = (id: ResultID): HTMLImageElement => {

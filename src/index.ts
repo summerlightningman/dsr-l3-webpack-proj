@@ -1,7 +1,7 @@
 import {Question, QuestionList} from "./types";
 
 import questions from '../data/questions.json';
-import {setAnswerList, setQuestionText} from "./helpers/node-functions";
+import {setAnswerList, setQuestionText} from "./helpers";
 
 import {$answerList} from "./constants";
 import getResultPage from "./helpers/get-result-page";
