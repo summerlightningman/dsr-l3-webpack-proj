@@ -26,7 +26,8 @@ const getResultPage = (resultId: ResultID): HTMLDivElement => {
 
     const finishPage = document.createElement('div');
     finishPage.appendChild(fairyImgNode);
-    finishPage.appendChild(descriptionNode)
+    finishPage.appendChild(descriptionNode);
+    finishPage.classList.add('result');
 
     return finishPage
 };
