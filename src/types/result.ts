@@ -11,3 +11,5 @@ export interface Result {
     description: Description,
     img: ImgSrc
 }
+
+export type ResultList = Result[];

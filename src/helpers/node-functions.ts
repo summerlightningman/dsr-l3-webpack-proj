@@ -1,9 +1,7 @@
-import {QuestionTitle} from "../types/question";
-import {AnswerText} from "../types/answer";
+import {AnswerText, QuestionTitle} from "../types";
 import answerToNode from "./answer-to-node";
+import {$answerList, $questionTitle} from "../constants";
 
-const $questionTitle: HTMLHeadingElement = document.querySelector('#question');
-const $answerList: HTMLUListElement = document.querySelector('#answer-list');
 
 export const setQuestionText = (text: QuestionTitle) => $questionTitle.innerText = text;
 export const setAnswerList = (answersText: AnswerText[], onClick: () => void) => {
