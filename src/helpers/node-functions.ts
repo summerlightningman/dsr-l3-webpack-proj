@@ -1,5 +1,5 @@
-import {QuestionTitle} from "./types/question";
-import {AnswerText} from "./types/answer";
+import {QuestionTitle} from "../types/question";
+import {AnswerText} from "../types/answer";
 import answerToNode from "./answer-to-node";
 
 const $questionTitle: HTMLHeadingElement = document.querySelector('#question');
