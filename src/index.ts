@@ -1,4 +1,4 @@
-import {Question, QuestionList} from "./types/question";
+import {Question, QuestionList} from "./types";
 
 import questions from '../data/questions.json';
 import {setAnswerList, setQuestionText} from "./helpers/node-functions";
